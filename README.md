@@ -8,10 +8,6 @@ This project is a responsive landing page designed for promoting studying MBBS a
 - [Installation](#installation)
 - [Usage](#usage)
 - [Form Validation](#form-validation)
-- [SEO & Responsiveness](#seo--responsiveness)
-- [Google Analytics & Facebook Pixel](#google-analytics--facebook-pixel)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - **Hero Section**: An engaging banner with a call-to-action (CTA) button ("Apply Now for MBBS Abroad").
@@ -39,13 +35,26 @@ git clone https://github.com/prabhjotsingh-22/studyabroadfrontend.git
 cd studyabroadfrontend
 
 ### 3. Install dependencies
-
 Run the following command to install the required dependencies:
 npm install
 
 ### 4. Start the development server
-
 Once the dependencies are installed, start the React development server:
 npm start
 Your application should now be running at http://localhost:3000/.
 
+## Usage
+After starting the server, access the landing page at `http://localhost:3000/`. The page includes:
+- **Hero Section**: A call-to-action banner with an "Apply Now" button.
+- **Why Study MBBS Abroad**: Benefits of studying MBBS abroad.
+- **Top Countries**: Showcases countries for MBBS programs.
+- **Admission Process & Eligibility**: Lists the steps for applying.
+- **Lead Generation Form**: Collects name, email, phone, and country preference.
+
+## Form Validation
+The lead form includes client-side validation with the following rules:
+- **Name**: Required.
+- **Email**: Required, must be in a valid email format.
+- **Phone**: Required, must be numeric.
+- **Country Preference**: Required.
+The form displays error messages for invalid inputs and prevents submission until all fields are valid.
